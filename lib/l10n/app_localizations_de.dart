@@ -250,4 +250,25 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get upcoming_workout => 'Bevorstehendes Training';
+
+  @override
+  String get language => 'Sprache';
+
+  @override
+  String get english => 'Englisch';
+
+  @override
+  String get arabic => 'Arabisch';
+
+  @override
+  String get french => 'Französisch';
+
+  @override
+  String get german => 'Deutsch';
+
+  @override
+  String get spanish => 'Spanisch';
+
+  @override
+  String get italian => 'Italienisch';
 }
