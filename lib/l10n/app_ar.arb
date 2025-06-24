@@ -79,5 +79,14 @@
   "rest": "راحة",
   "training_completed_successfully": "تم إكمال التمرين بنجاح",
   "continuee": "استمر",
-  "upcoming_workout": "التمرين القادم"
+  "upcoming_workout": "التمرين القادم",
+  "language": "اللغة",
+  "english": "الإنجليزية",
+  "arabic": "العربية",
+  "french": "الفرنسية",
+  "german": "الألمانية",
+  "spanish": "الإسبانية",
+   "italian": "الإيطالية"
+
+
 }

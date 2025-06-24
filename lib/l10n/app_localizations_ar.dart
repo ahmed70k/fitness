@@ -250,4 +250,25 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get upcoming_workout => 'التمرين القادم';
+
+  @override
+  String get language => 'اللغة';
+
+  @override
+  String get english => 'الإنجليزية';
+
+  @override
+  String get arabic => 'العربية';
+
+  @override
+  String get french => 'الفرنسية';
+
+  @override
+  String get german => 'الألمانية';
+
+  @override
+  String get spanish => 'الإسبانية';
+
+  @override
+  String get italian => 'الإيطالية';
 }

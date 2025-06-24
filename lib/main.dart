@@ -1,26 +1,39 @@
-import 'package:fitness2/screen_1.dart';
+
+import 'package:fitness2/ui/providers/language_provider/language_provider.dart';
+import 'package:fitness2/ui/screens/language_screens/language_screen.dart';
+import 'package:fitness2/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import 'l10n/app_localizations.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+      create: (context) => LanguageProvider(),
+
+      child:  MyApp()));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+ const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
+    var appLanguage = Provider.of<LanguageProvider>(context);
+
     return MaterialApp(
-      locale: Locale("ar"),
+      locale: Locale(appLanguage.appLanguage),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       debugShowCheckedModeBanner: false,
       title: 'fitness',
-      theme: ThemeData(),
-      initialRoute: Screen1.routeName,
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(color: AppColors.primaryColor),
+        scaffoldBackgroundColor: AppColors.darkGrayColor,
+      ),
+      initialRoute: LanguageScreen.routeName,
       routes: {
-         Screen1.routeName:(_)=>Screen1(),
+        LanguageScreen.routeName:(_)=>LanguageScreen(),
 
       },
     );
