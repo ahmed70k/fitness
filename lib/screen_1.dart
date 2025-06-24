@@ -1,4 +1,5 @@
 import 'package:fitness2/l10n/app_localizations.dart';
+import 'package:fitness2/utils/app_assets.dart';
 import 'package:flutter/material.dart';
 
 class Screen1 extends StatelessWidget {
@@ -13,6 +14,7 @@ class Screen1 extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(AppLocalizations.of(context)!.username),
+        Image.asset(AppAssets.arrow)
 
     ],),);
   }
