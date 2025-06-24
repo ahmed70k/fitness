@@ -1,3 +1,4 @@
+import 'package:fitness2/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 class TextSearch extends StatelessWidget {
  final Widget? suffixIcon;
@@ -11,7 +12,7 @@ class TextSearch extends StatelessWidget {
 
   const TextSearch({
     super.key,
-      this.onChanged,
+    this.onChanged,
     this.textColor = Colors.red,//
     this.hintText,
     this.primaryColor,
@@ -30,15 +31,15 @@ class TextSearch extends StatelessWidget {
       cursorColor: Colors.black,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: TextStyle(color: hintColor ?? Colors.red),//primary
+        hintStyle: TextStyle(color: hintColor ?? AppColors.primaryColor),//primary
         suffixIcon: suffixIcon,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: primaryColor ?? Colors.red),//primary
+          borderSide: BorderSide(color: primaryColor ?? AppColors.primaryColor),//primary
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: primaryColor ?? Colors.red),//primary
+          borderSide: BorderSide(color: primaryColor ?? AppColors.primaryColor),//primary
         ),
         errorBorder: errorBorder,
       ),

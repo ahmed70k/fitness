@@ -1,6 +1,7 @@
 
 import 'package:fitness2/ui/providers/language_provider/language_provider.dart';
 import 'package:fitness2/ui/screens/language_screens/language_screen.dart';
+import 'package:fitness2/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -27,8 +28,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'fitness',
       theme: ThemeData(
-        appBarTheme: AppBarTheme(color: Colors.red),// primary
-        scaffoldBackgroundColor: Colors.grey
+        appBarTheme: AppBarTheme(color: AppColors.primaryColor),
+        scaffoldBackgroundColor: AppColors.darkGrayColor,
       ),
       initialRoute: LanguageScreen.routeName,
       routes: {

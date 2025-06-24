@@ -1,6 +1,8 @@
 import 'package:fitness2/l10n/app_localizations.dart';
 import 'package:fitness2/ui/screens/language_screens/language_list_view.dart';
 import 'package:fitness2/ui/utils/normalizer.dart';
+import 'package:fitness2/utils/app_colors.dart';
+import 'package:fitness2/utils/app_style.dart';
 import 'package:flutter/material.dart';
 import '../../../models/language_data/language_data.dart';
 import '../../custom_widget/text_search/text_search.dart';
@@ -25,35 +27,24 @@ class _LanguageUiState extends State<LanguageScreen> {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
+     // backgroundColor: AppColors.blackColor,
       appBar: AppBar(
         title: Text(
           textAlign: TextAlign.center,
           AppLocalizations.of(context)!.language,
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.w800,
-            color: Colors.white,
-          ),
+          style:AppStyle.text30BoldWhite
         ),
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(vertical: 23, horizontal: 28),
         child: Column(
           children: [
-            Row(
-              children: [
-                Expanded(
-                  child: TextSearch(
+            TextSearch(
                     onChanged: (String newText) {
                       filteredLanguageListByText(newText);
                     },
                     suffixIcon: Icon(Icons.search),
                   ),
-                ),
-                SizedBox(width: width * 0.03),
-                Icon(Icons.search, color: Colors.red),
-              ],
-            ),
             SizedBox(height: height * 0.04),
             LanguageListView(filteredLanguageList: filteredLanguageList,),
           ],

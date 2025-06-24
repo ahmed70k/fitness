@@ -1,3 +1,5 @@
+import 'package:fitness2/utils/app_colors.dart';
+import 'package:fitness2/utils/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +26,6 @@ class LanguageListView  extends StatelessWidget {
               appLanguage.appLanguage == languageCode[filteredIndex];
           return InkWell(
             splashColor: Colors.transparent,
-
             onTap: () {
               appLanguage.changeLanguage(languageCode[filteredIndex]);
             },
@@ -36,17 +37,18 @@ class LanguageListView  extends StatelessWidget {
           );
         },
         separatorBuilder: (context, index) =>
-            Divider(color: Colors.red, height: height * 0.08),
+            Divider(color: AppColors.primaryColor, height: height * 0.08),
         itemCount: filteredLanguageList.length,
       ),
     );
   }
    Widget selectedItemLanguage(String textLanguage) {
-     return Row(children: [Text(textLanguage), Spacer(), Icon(Icons.check)]);
+     return Row(children: [Text(textLanguage,style: AppStyle.text20SemiBoldBlack,),
+       Spacer(), Icon(Icons.check,color: AppColors.primaryColor,size: 30,)]);
    }
 
    Widget unSelectedItemLanguage(String textLanguage) {
-     return Text(textLanguage);
+     return Text(textLanguage,style: AppStyle.text20SemiBoldBlack,);
    }
 
 }
