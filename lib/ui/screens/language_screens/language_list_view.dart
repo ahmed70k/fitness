@@ -2,7 +2,6 @@ import 'package:fitness2/utils/app_colors.dart';
 import 'package:fitness2/utils/app_style.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../../../models/language_data/language_data.dart';
 import '../../providers/language_provider/language_provider.dart';
 

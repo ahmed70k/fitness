@@ -1,45 +1,58 @@
 import 'package:fitness2/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+
+import '../../../utils/app_style.dart';
+
 class TextSearch extends StatelessWidget {
- final Widget? suffixIcon;
+  final Widget? suffixIcon;
   final String? hintText;
   final Color? hintColor;
-  final Color? primaryColor;
- final Color? textColor;
+  final Color? borderPrimaryColor;
+  final Color? textColor;
   final InputBorder? errorBorder;
-  final Function? onChanged ;
+  final Function? onChanged;
+  final TextStyle? hintStyle;
+  final String? Function(String?)? validator;
 
-
-  const TextSearch({
+    const TextSearch({
+    this.hintStyle,
     super.key,
     this.onChanged,
-    this.textColor = Colors.red,//
+    this.textColor,
     this.hintText,
-    this.primaryColor,
+    this.borderPrimaryColor,
     this.suffixIcon,
     this.hintColor,
     this.errorBorder,
+    this.validator,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      onChanged:(String newText){
+      validator: validator,
+      style: TextStyle(color: AppColors.whiteColor),
+      onChanged: (String newText) {
         onChanged!(newText);
-
       },
       cursorColor: Colors.black,
       decoration: InputDecoration(
+        filled: true,
+        fillColor: AppColors.dimGrayColor,
         hintText: hintText,
-        hintStyle: TextStyle(color: hintColor ?? AppColors.primaryColor),//primary
+        hintStyle: hintStyle ?? AppStyle.text16MediumDarkGray,
         suffixIcon: suffixIcon,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: primaryColor ?? AppColors.primaryColor),//primary
+          borderSide: BorderSide(
+            color: borderPrimaryColor ?? AppColors.dimGrayColor,
+          ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(color: primaryColor ?? AppColors.primaryColor),//primary
+          borderSide: BorderSide(
+            color: borderPrimaryColor ?? AppColors.dimGrayColor,
+          ),
         ),
         errorBorder: errorBorder,
       ),

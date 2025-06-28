@@ -1,7 +1,6 @@
 import 'package:fitness2/l10n/app_localizations.dart';
 import 'package:fitness2/ui/screens/language_screens/language_list_view.dart';
 import 'package:fitness2/ui/utils/normalizer.dart';
-import 'package:fitness2/utils/app_colors.dart';
 import 'package:fitness2/utils/app_style.dart';
 import 'package:flutter/material.dart';
 import '../../../models/language_data/language_data.dart';
@@ -27,26 +26,26 @@ class _LanguageUiState extends State<LanguageScreen> {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
-     // backgroundColor: AppColors.blackColor,
       appBar: AppBar(
         title: Text(
           textAlign: TextAlign.center,
           AppLocalizations.of(context)!.language,
-          style:AppStyle.text30BoldWhite
+          style: AppStyle.text30BoldWhite,
         ),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(vertical: 23, horizontal: 28),
+        padding: EdgeInsets.symmetric(horizontal: 28),
         child: Column(
           children: [
-            TextSearch(
-                    onChanged: (String newText) {
-                      filteredLanguageListByText(newText);
-                    },
-                    suffixIcon: Icon(Icons.search),
-                  ),
             SizedBox(height: height * 0.04),
-            LanguageListView(filteredLanguageList: filteredLanguageList,),
+            TextSearch(
+              onChanged: (String newText) {
+                filteredLanguageListByText(newText);
+              },
+              suffixIcon: Icon(Icons.search),
+            ),
+            SizedBox(height: height * 0.04),
+            LanguageListView(filteredLanguageList: filteredLanguageList),
           ],
         ),
       ),
@@ -58,7 +57,9 @@ class _LanguageUiState extends State<LanguageScreen> {
     List<int> filteredList = [];
     List<String> languageList = LanguageData.getLanguageList(context);
     for (int i = 0; i < languageList.length; i++) {
-      if (normalizeText(languageList[i]).contains(normalizeText(newText)))
+      if (normalizeText(
+        languageList[i],
+      ).contains(normalizeText(newText.toLowerCase())))
       // if (languageList[i].toLowerCase().contains(newText.toLowerCase()))
       {
         filteredList.add(i);

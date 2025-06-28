@@ -4,12 +4,12 @@ import 'package:fitness2/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class ButtonContainer extends StatelessWidget {
-
-//the default button will be the register button
+  //the default button will be the register button
   String? text;
   Color? buttonColor;
   TextStyle? textStyle;
-  VoidCallback onPressed; //the function that will work when the button is clicked, no default function because it depends on every screen
+  VoidCallback
+  onPressed; //the function that will work when the button is clicked, no default function because it depends on every screen
 
   ButtonContainer({
     super.key,
@@ -24,18 +24,23 @@ class ButtonContainer extends StatelessWidget {
     var width = MediaQuery.of(context).size.width;
     var height = MediaQuery.of(context).size.height;
 
-    return Container(
-      width: width*0.88,
-      height: height*0.07,
+    return SizedBox(
+      width: width * 0.88,
+      height: height * 0.07,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: buttonColor ?? AppColors.whiteColor, //the default for register button is white
+          backgroundColor:
+              buttonColor ??
+              AppColors.whiteColor, //the default for register button is white
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(27.5),
           ),
         ),
         onPressed: onPressed,
-        child: Text(text??AppLocalizations.of(context)!.register,style: textStyle??AppStyle.text15SemiBoldBlack,), //the default register text style
+        child: Text(
+          text ?? AppLocalizations.of(context)!.register,
+          style: textStyle ?? AppStyle.text15SemiBoldBlack,
+        ), //the default register text style
       ),
     );
   }
