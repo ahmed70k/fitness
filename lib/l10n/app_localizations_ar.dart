@@ -271,4 +271,10 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get italian => 'الإيطالية';
+
+  @override
+  String get already_have_account => 'هل لديك حساب بالفعل؟ سجّل الدخول الآن';
+
+  @override
+  String get remember_password => 'هل تتذكر كلمة المرور؟ سجّل الدخول';
 }

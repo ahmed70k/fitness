@@ -18,7 +18,6 @@ class EntryScreen extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
-      appBar: AppBar(automaticallyImplyLeading: false, toolbarHeight: 16),
       backgroundColor: AppColors.primaryColor,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 21),
@@ -26,6 +25,7 @@ class EntryScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            SizedBox(height: height * 0.08),
             ArrowBack(),
             Expanded(
               child: Column(
@@ -67,7 +67,7 @@ class EntryScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: height * 0.06),
+                  SizedBox(height: height * 0.04),
                 ],
               ),
             ),

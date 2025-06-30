@@ -86,6 +86,10 @@
   "french": "Francés",
   "german": "Alemán",
   "spanish": "Español",
-  "italian": "Italiano"
+  "italian": "Italiano",
+  "already_have_account": "¿Ya tienes una cuenta? Inicia sesión ahora",
+  "remember_password": "¿Recuerdas la contraseña? Iniciar sesión"
+
+
 
 }

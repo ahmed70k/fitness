@@ -86,6 +86,10 @@
   "french": "Français",
   "german": "Allemand",
   "spanish": "Espagnol",
-  "italian": "Italien"
+  "italian": "Italien",
+  "already_have_account": "Vous avez déjà un compte ? Connectez-vous maintenant",
+  "remember_password": "Vous vous souvenez du mot de passe ? Connexion"
+
+
 
 }
