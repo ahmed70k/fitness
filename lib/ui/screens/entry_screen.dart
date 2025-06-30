@@ -1,12 +1,13 @@
 import 'package:fitness2/ui/authentication/register/register_screen.dart';
 import 'package:fitness2/ui/custom_widget/button_container/button_container.dart';
+import 'package:fitness2/ui/home_screens/home_screen.dart';
 import 'package:fitness2/utils/app_assets.dart';
 import 'package:fitness2/utils/app_colors.dart';
 import 'package:fitness2/utils/app_style.dart';
 import 'package:flutter/material.dart';
 import '../../l10n/app_localizations.dart';
 import '../authentication/login/login_screen.dart';
-import '../custom_widget/arrow_back/arrow_back.dart';
+
 
 class EntryScreen extends StatelessWidget {
   const EntryScreen({super.key});
@@ -25,8 +26,6 @@ class EntryScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            SizedBox(height: height * 0.08),
-            ArrowBack(),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -56,7 +55,9 @@ class EntryScreen extends StatelessWidget {
                   ),
                   SizedBox(height: height * 0.02),
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pushNamed(context, HomeScreen.routeName);
+                    },
                     child: Text(
                       AppLocalizations.of(context)!.continue_as_a_guest,
                       style: AppStyle.text15BoldWhite.copyWith(
