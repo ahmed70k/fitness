@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 
 class ButtonContainer extends StatelessWidget {
   //the default button will be the register button
-  String? text;
-  Color? buttonColor;
-  TextStyle? textStyle;
-  VoidCallback
+  final String? text;
+  final Color? buttonColor;
+  final TextStyle? textStyle;
+ final VoidCallback
   onPressed; //the function that will work when the button is clicked, no default function because it depends on every screen
 
   ButtonContainer({
@@ -25,7 +25,7 @@ class ButtonContainer extends StatelessWidget {
     var height = MediaQuery.of(context).size.height;
 
     return SizedBox(
-      width: width * 0.88,
+      width: width * 0.90,
       height: height * 0.07,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
@@ -33,7 +33,7 @@ class ButtonContainer extends StatelessWidget {
               buttonColor ??
               AppColors.whiteColor, //the default for register button is white
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(27.5),
+            borderRadius: BorderRadius.circular(28),
           ),
         ),
         onPressed: onPressed,

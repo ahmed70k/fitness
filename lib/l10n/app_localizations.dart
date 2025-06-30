@@ -630,6 +630,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Italian'**
   String get italian;
+
+  /// No description provided for @already_have_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account? Login Now'**
+  String get already_have_account;
+
+  /// No description provided for @remember_password.
+  ///
+  /// In en, this message translates to:
+  /// **'Remember Password? Login'**
+  String get remember_password;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
