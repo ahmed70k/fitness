@@ -68,7 +68,7 @@ class EntryScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: height * 0.06),
+                  SizedBox(height: height * 0.04),
                 ],
               ),
             ),

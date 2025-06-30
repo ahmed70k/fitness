@@ -271,4 +271,10 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get italian => 'Italienisch';
+
+  @override
+  String get already_have_account => 'Hast du schon ein Konto? Jetzt einloggen';
+
+  @override
+  String get remember_password => 'Passwort merken? Einloggen';
 }

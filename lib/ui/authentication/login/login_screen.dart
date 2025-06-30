@@ -14,13 +14,12 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: AppBar(automaticallyImplyLeading: false, toolbarHeight: 16),
-
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 21),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: height * 0.08),
             ArrowBack(),
             SizedBox(height: height * 0.08),
             Image.asset(AppAssets.logo),
@@ -31,7 +30,7 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: height * 0.04),
             Expanded(child: LoginForm()),
-            SizedBox(height: height * 0.02),
+            SizedBox(height: height * 0.04),
           ],
         ),
       ),

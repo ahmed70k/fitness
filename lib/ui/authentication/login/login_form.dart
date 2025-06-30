@@ -1,3 +1,4 @@
+import 'package:fitness2/ui/custom_widget/text_button/text_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../../l10n/app_localizations.dart';
@@ -22,12 +23,16 @@ class LoginForm extends StatelessWidget {
       key: formKey,
       child: Column(
         children: [
-          TextSearch(hintText: AppLocalizations.of(context)!.enter_your_email),
+          TextSearch(
+            onChanged: () {},
+            hintText: AppLocalizations.of(context)!.enter_your_email,
+          ),
           SizedBox(height: height * 0.02),
           TextSearch(
+            onChanged: () {},
             hintText: AppLocalizations.of(context)!.enter_your_password,
             suffixIcon: Padding(
-              padding: EdgeInsets.only(right: 16),
+              padding: EdgeInsets.only(right: 18),
               child: SvgPicture.asset(
                 AppAssets.eyeClosed,
                 color: AppColors.darkGrayColor,
@@ -55,17 +60,13 @@ class LoginForm extends StatelessWidget {
             },
           ),
           Spacer(),
-          TextButton(
+          TextButtonScreen(
+            text: AppLocalizations.of(
+              context,
+            )!.dont_have_an_account_register_now,
             onPressed: () {
               Navigator.pushNamed(context, RegisterScreen.routeName);
             },
-            child: Container(
-              alignment: Alignment.center,
-              child: Text(
-                AppLocalizations.of(context)!.dont_have_an_account_register_now,
-                style: AppStyle.text11BoldWhite,
-              ),
-            ),
           ),
         ],
       ),

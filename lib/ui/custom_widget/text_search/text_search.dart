@@ -10,14 +10,14 @@ class TextSearch extends StatelessWidget {
   final Color? borderPrimaryColor;
   final Color? textColor;
   final InputBorder? errorBorder;
-  final Function? onChanged;
+  final Function onChanged;
   final TextStyle? hintStyle;
   final String? Function(String?)? validator;
 
-    const TextSearch({
+  const TextSearch({
     this.hintStyle,
     super.key,
-    this.onChanged,
+    required this.onChanged,
     this.textColor,
     this.hintText,
     this.borderPrimaryColor,
@@ -29,32 +29,37 @@ class TextSearch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return TextFormField(
-      validator: validator,
-      style: TextStyle(color: AppColors.whiteColor),
-      onChanged: (String newText) {
-        onChanged!(newText);
-      },
-      cursorColor: Colors.black,
-      decoration: InputDecoration(
-        filled: true,
-        fillColor: AppColors.dimGrayColor,
-        hintText: hintText,
-        hintStyle: hintStyle ?? AppStyle.text16MediumDarkGray,
-        suffixIcon: suffixIcon,
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(
-            color: borderPrimaryColor ?? AppColors.dimGrayColor,
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
+    return SizedBox(
+      height: height * 0.07,
+      child: TextFormField(
+        style: TextStyle(color: AppColors.whiteColor),
+        validator: validator,
+        onChanged: (String newText) {
+          onChanged(newText);
+        },
+        cursorColor: Colors.black,
+        decoration: InputDecoration(
+          filled: true,
+          fillColor: AppColors.dimGrayColor,
+          hintText: hintText,
+          hintStyle: hintStyle ?? AppStyle.text16MediumDarkGray,
+          suffixIcon: suffixIcon,
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(28),
+            borderSide: BorderSide(
+              color: borderPrimaryColor ?? AppColors.dimGrayColor,
+            ),
           ),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(28),
-          borderSide: BorderSide(
-            color: borderPrimaryColor ?? AppColors.dimGrayColor,
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(28),
+            borderSide: BorderSide(
+              color: borderPrimaryColor ?? AppColors.dimGrayColor,
+            ),
           ),
+          errorBorder: errorBorder,
         ),
-        errorBorder: errorBorder,
       ),
     );
   }

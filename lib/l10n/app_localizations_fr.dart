@@ -271,4 +271,10 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get italian => 'Italien';
+
+  @override
+  String get already_have_account => 'Vous avez déjà un compte ? Connectez-vous maintenant';
+
+  @override
+  String get remember_password => 'Vous vous souvenez du mot de passe ? Connexion';
 }
