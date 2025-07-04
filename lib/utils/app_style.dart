@@ -68,6 +68,11 @@ class AppStyle {
     fontSize: 24,
     color: AppColors.whiteColor,
   );
+  static TextStyle text22BoldWhite = GoogleFonts.montserratAlternates(
+    fontWeight: FontWeight.bold,
+    fontSize: 22,
+    color: AppColors.whiteColor,
+  );
   static TextStyle text20MediumBlack = GoogleFonts.montserratAlternates(
     fontWeight: FontWeight.w500,
     fontSize: 20,
@@ -134,6 +139,11 @@ class AppStyle {
     fontSize: 15,
     color: AppColors.whiteColor,
   );
+  static TextStyle text15RegularWhite = GoogleFonts.montserratAlternates(
+    fontWeight: FontWeight.normal,
+    fontSize: 15,
+    color: AppColors.whiteColor,
+  );
   static TextStyle text15BoldBlack = GoogleFonts.montserratAlternates(
     fontWeight: FontWeight.bold,
     fontSize: 15,
@@ -194,6 +204,11 @@ class AppStyle {
 
   static TextStyle text13MediumWhite = GoogleFonts.montserratAlternates(
     fontWeight: FontWeight.w500,
+    fontSize: 13,
+    color: AppColors.whiteColor,
+  );
+  static TextStyle text13RegularWhite = GoogleFonts.montserratAlternates(
+    fontWeight: FontWeight.normal,
     fontSize: 13,
     color: AppColors.whiteColor,
   );
