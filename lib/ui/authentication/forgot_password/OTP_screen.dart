@@ -1,4 +1,5 @@
 import 'package:fitness2/l10n/app_localizations.dart';
+import 'package:fitness2/ui/authentication/forgot_password/create_new_password.dart';
 import 'package:fitness2/ui/custom_widget/arrow_back/arrow_back.dart';
 import 'package:fitness2/ui/custom_widget/button_container/button_container.dart';
 import 'package:fitness2/utils/app_colors.dart';
@@ -62,7 +63,9 @@ class OtpScreen extends StatelessWidget {
         ),
         SizedBox(height: height * 0.05),
         ButtonContainer(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, CreateNewPassword.routeName);
+          },
           text: AppLocalizations.of(context)!.verify,
         ),
         Spacer(),

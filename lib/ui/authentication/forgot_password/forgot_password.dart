@@ -1,4 +1,5 @@
 import 'package:fitness2/l10n/app_localizations.dart';
+import 'package:fitness2/ui/authentication/forgot_password/OTP_screen.dart';
 import 'package:fitness2/ui/authentication/login/login_screen.dart';
 import 'package:fitness2/ui/custom_widget/arrow_back/arrow_back.dart';
 import 'package:fitness2/ui/custom_widget/button_container/button_container.dart';
@@ -40,7 +41,9 @@ class ForgotPassword extends StatelessWidget {
             ),
             SizedBox(height: height * 0.05),
             ButtonContainer(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, OtpScreen.routeName);
+              },
               text: AppLocalizations.of(context)!.send_code,
             ),
             Spacer(),
