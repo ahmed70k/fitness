@@ -37,13 +37,11 @@ class CreateNewPassword extends StatelessWidget {
             ),
             SizedBox(height: height * 0.04),
             TextSearch(
-              controller: newPassword,
               onChanged: () {},
               hintText: AppLocalizations.of(context)!.new_password,
             ),
             SizedBox(height: height * 0.02),
             TextSearch(
-              controller: confirmNewPassword,
               onChanged: () {},
               hintText: AppLocalizations.of(context)!.confirm_password,
             ),
