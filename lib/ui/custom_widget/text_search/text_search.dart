@@ -12,9 +12,11 @@ class TextSearch extends StatelessWidget {
   final InputBorder? errorBorder;
   final Function onChanged;
   final TextStyle? hintStyle;
+  final TextEditingController? controller;
   final String? Function(String?)? validator;
 
   const TextSearch({
+    this.controller,
     this.hintStyle,
     super.key,
     required this.onChanged,
@@ -33,6 +35,7 @@ class TextSearch extends StatelessWidget {
     return SizedBox(
       height: height * 0.07,
       child: TextFormField(
+        controller: controller,
         style: TextStyle(color: AppColors.primaryColor),
         validator: validator,
         onChanged: (String newText) {
