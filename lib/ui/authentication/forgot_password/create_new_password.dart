@@ -53,13 +53,13 @@ class CreateNewPassword extends StatelessWidget {
                 newPassword.text == confirmNewPassword.text
                     ? Navigator.pushNamed(context, PasswordChanged.routeName)
                     : showDialog(
-                        context: context,
-                        builder: (context) {
-                          return AlertDialog(
-                            title: Text("password does not match"),
-                          );
-                        },
-                      );
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: Text("password does not match"),
+                    );
+                  },
+                );
               },
               text: "Confirm",
             ),

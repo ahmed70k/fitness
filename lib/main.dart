@@ -37,22 +37,23 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'fitness',
       theme: ThemeData(
+
         appBarTheme: AppBarTheme(color: AppColors.primaryColor),
-        scaffoldBackgroundColor: AppColors.primaryColor,
-      ),
-      initialRoute: SplashScreen.routeName,
-      routes: {
-        LanguageScreen.routeName: (_) => LanguageScreen(),
-        LoginScreen.routeName: (_) => LoginScreen(),
-        HomeScreen.routeName: (_) => HomeScreen(),
-        EntryScreen.routeName: (_) => EntryScreen(),
-        RegisterScreen.routeName: (_) => RegisterScreen(),
-        ForgotPassword.routeName: (_) => ForgotPassword(),
-        SplashScreen.routeName: (_) => SplashScreen(),
-        OtpScreen.routeName: (_) => OtpScreen(),
-        CreateNewPassword.routeName: (_) => CreateNewPassword(),
-        PasswordChanged.routeName: (_) => PasswordChanged(),
-      },
+    scaffoldBackgroundColor: AppColors.primaryColor,
+    ),
+    initialRoute: SplashScreen.routeName,
+    routes: {
+    LanguageScreen.routeName: (_) => LanguageScreen(),
+    LoginScreen.routeName: (_) => LoginScreen(),
+    HomeScreen.routeName: (_) => HomeScreen(),
+    EntryScreen.routeName: (_) => EntryScreen(),
+    RegisterScreen.routeName: (_) => RegisterScreen(),
+    ForgotPassword.routeName: (_) => ForgotPassword(),
+    SplashScreen.routeName: (_) => SplashScreen(),
+    OtpScreen.routeName: (_) => OtpScreen(),
+    CreateNewPassword.routeName: (_) => CreateNewPassword(),
+    PasswordChanged.routeName: (_) => PasswordChanged(),
+    },
     );
   }
 }

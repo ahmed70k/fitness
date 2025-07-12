@@ -175,54 +175,6 @@ class HomeScreen extends StatelessWidget {
                  SlideToStartButton(onSlideComplete: (){
                    Navigator.pushNamed(context,routeName);
                  })
-
-                 /* SliderButton(
-                    action: () async{
-                      Navigator.pushNamed(context, Step1.routeName);
-                    },
-                    label: Center(
-                      child: Text(
-                        AppLocalizations.of(context)!.lets_start,
-                        style: AppStyle.text17SemiBoldWhite,
-                      ),
-                    ),
-                    backgroundColor: Color(0X6D000000),
-                    width: double.infinity,
-                    shimmer: false,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            shape: CircleBorder(side: BorderSide.none),
-                          ),
-                          child: SvgPicture.asset(AppAssets.arrowForward),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: width * 0.1),
-                          child: Row(
-                            children: [
-                              Icon(
-                                Icons.arrow_forward_ios_outlined,
-                                color: Color(0X40FFFFFF),
-                              ),
-                              Icon(
-                                Icons.arrow_forward_ios_outlined,
-                                color: Color(0X80FFFFFF),
-                              ),
-                              Icon(
-                                Icons.arrow_forward_ios_outlined,
-                                color: Color(0XFFFFFFFF),
-                              ),
-                            ],
-                          ),
-                        ),
-
-                      ],
-                    ),
-                  ),*/
-
                 ],
               ),
             ),
