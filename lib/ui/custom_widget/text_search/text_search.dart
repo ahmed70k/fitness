@@ -5,6 +5,7 @@ import '../../../utils/app_style.dart';
 
 class TextSearch extends StatelessWidget {
   final Widget? suffixIcon;
+  final TextEditingController? controller;
   final String? hintText;
   final Color? hintColor;
   final Color? borderPrimaryColor;
@@ -15,6 +16,7 @@ class TextSearch extends StatelessWidget {
   final String? Function(String?)? validator;
 
   const TextSearch({
+    this.controller,
     this.hintStyle,
     super.key,
     required this.onChanged,
@@ -33,7 +35,12 @@ class TextSearch extends StatelessWidget {
     return SizedBox(
       height: height * 0.07,
       child: TextFormField(
+ feature_weight_and_height
         style: TextStyle(color: AppColors.primaryColor),
+
+        controller: controller,
+        style: TextStyle(color: AppColors.whiteColor),
+ develop
         validator: validator,
         onChanged: (String newText) {
           onChanged(newText);
