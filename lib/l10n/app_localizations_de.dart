@@ -277,4 +277,13 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get remember_password => 'Passwort merken? Einloggen';
+
+  @override
+  String get lb => 'Pfund';
+
+  @override
+  String get kg => 'Kilogramm';
+
+  @override
+  String get cm => 'Zentimeter';
 }

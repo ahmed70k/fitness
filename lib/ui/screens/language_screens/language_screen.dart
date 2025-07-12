@@ -1,6 +1,7 @@
 import 'package:fitness2/l10n/app_localizations.dart';
 import 'package:fitness2/ui/screens/language_screens/language_list_view.dart';
-import 'package:fitness2/ui/utils/normalizer.dart';
+import 'package:fitness2/utils/app_colors.dart';
+import 'package:fitness2/utils/normalizer.dart';
 import 'package:fitness2/utils/app_style.dart';
 import 'package:flutter/material.dart';
 import '../../../models/language_data/language_data.dart';
@@ -24,13 +25,14 @@ class _LanguageUiState extends State<LanguageScreen> {
       );
     }
     var height = MediaQuery.of(context).size.height;
-    var width = MediaQuery.of(context).size.width;
     return Scaffold(
+      backgroundColor: AppColors.darkWhiteColor,
       appBar: AppBar(
+        backgroundColor:  AppColors.darkWhiteColor,
         title: Text(
           textAlign: TextAlign.center,
           AppLocalizations.of(context)!.language,
-          style: AppStyle.text30BoldWhite,
+          style: AppStyle.text33SemiBoldPrimary,
         ),
       ),
       body: Padding(

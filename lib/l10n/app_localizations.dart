@@ -642,6 +642,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Remember Password? Login'**
   String get remember_password;
+
+  /// No description provided for @lb.
+  ///
+  /// In en, this message translates to:
+  /// **'Pound'**
+  String get lb;
+
+  /// No description provided for @kg.
+  ///
+  /// In en, this message translates to:
+  /// **'Kg'**
+  String get kg;
+
+  /// No description provided for @cm.
+  ///
+  /// In en, this message translates to:
+  /// **'Cm'**
+  String get cm;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

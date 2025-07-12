@@ -34,21 +34,22 @@ class RegisterScreen extends StatelessWidget {
             ),
             SizedBox(height: height * 0.02),
             TextSearch(
-                onChanged: (){},
-                hintText: AppLocalizations.of(context)!.username),
+              onChanged: () {},
+              hintText: AppLocalizations.of(context)!.username,
+            ),
             SizedBox(height: height * 0.01),
             TextSearch(
-
-                onChanged: (){},
-                hintText: AppLocalizations.of(context)!.email),
+              onChanged: () {},
+              hintText: AppLocalizations.of(context)!.email,
+            ),
             SizedBox(height: height * 0.01),
             TextSearch(
-
-                onChanged: (){},
-                hintText: AppLocalizations.of(context)!.password),
+              onChanged: () {},
+              hintText: AppLocalizations.of(context)!.password,
+            ),
             SizedBox(height: height * 0.01),
             TextSearch(
-              onChanged: (){},
+              onChanged: () {},
               hintText: AppLocalizations.of(context)!.confirm_password,
               suffixIcon: Padding(
                 padding: const EdgeInsets.only(right: 18),
@@ -59,12 +60,14 @@ class RegisterScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: height * 0.02),
-            ButtonContainer(onPressed: (){}),
+            ButtonContainer(onPressed: () {}),
             SizedBox(height: height * 0.07),
-            TextButtonScreen(onPressed: (){
-              Navigator.pushNamed(context, LoginScreen.routeName);
-            },
-                text: AppLocalizations.of(context)!.already_have_account)
+            TextButtonScreen(
+              onPressed: () {
+                Navigator.pushNamed(context, LoginScreen.routeName);
+              },
+              text: AppLocalizations.of(context)!.already_have_account,
+            ),
           ],
         ),
       ),

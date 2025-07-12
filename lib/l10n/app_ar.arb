@@ -28,7 +28,7 @@
   "start_your_fitness": "ابدأ رحلتك في اللياقة\nبدعم وتوجيه تطبيقنا.",
   "drink": "اشرب",
   "lets_start": "يلا نبدأ",
-  "what_is_your_weight": "ما هو وزنك؟",
+  "what_is_your_weight": "ما هو وزنك ؟",
   "next": "التالي",
   "what_is_your_height": "ما هو طولك؟",
   "inches": "بوصات",
@@ -88,9 +88,10 @@
   "spanish": "الإسبانية",
    "italian": "الإيطالية",
    "already_have_account": "هل لديك حساب بالفعل؟ سجّل الدخول الآن",
-   "remember_password": "هل تتذكر كلمة المرور؟ سجّل الدخول"
-
-
-
+   "remember_password": "هل تتذكر كلمة المرور؟ سجّل الدخول",
+     "lb": "رطل",
+     "kg": "كيلوجرام",
+     "inches": "بوصة",
+      "cm": "سنتيمتر"
 
 }

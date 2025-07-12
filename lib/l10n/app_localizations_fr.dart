@@ -277,4 +277,13 @@ class AppLocalizationsFr extends AppLocalizations {
 
   @override
   String get remember_password => 'Vous vous souvenez du mot de passe ? Connexion';
+
+  @override
+  String get lb => 'Livre';
+
+  @override
+  String get kg => 'Kilogramme';
+
+  @override
+  String get cm => 'Centimetres';
 }

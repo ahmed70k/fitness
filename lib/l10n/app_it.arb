@@ -88,7 +88,12 @@
   "spanish": "Spagnolo",
   "italian": "Italiano",
   "already_have_account": "Hai già un account? Accedi ora",
-  "remember_password": "Ricordi la password? Accedi"
+  "remember_password": "Ricordi la password? Accedi",
+  "lb":"Libbra",
+  "kg":"Chilogrammo",
+  "inches":"Pollici",
+   "cm":"Centimetri"
+
 
 
 

@@ -96,7 +96,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get lets_start => 'يلا نبدأ';
 
   @override
-  String get what_is_your_weight => 'ما هو وزنك؟';
+  String get what_is_your_weight => 'ما هو وزنك ؟';
 
   @override
   String get next => 'التالي';
@@ -105,7 +105,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get what_is_your_height => 'ما هو طولك؟';
 
   @override
-  String get inches => 'بوصات';
+  String get inches => 'بوصة';
 
   @override
   String get what_do_you_want_to_achieve => 'ما الهدف الذي تريد تحقيقه؟';
@@ -277,4 +277,13 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get remember_password => 'هل تتذكر كلمة المرور؟ سجّل الدخول';
+
+  @override
+  String get lb => 'رطل';
+
+  @override
+  String get kg => 'كيلوجرام';
+
+  @override
+  String get cm => 'سنتيمتر';
 }

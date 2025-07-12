@@ -88,7 +88,12 @@
   "spanish": "Espagnol",
   "italian": "Italien",
   "already_have_account": "Vous avez déjà un compte ? Connectez-vous maintenant",
-  "remember_password": "Vous vous souvenez du mot de passe ? Connexion"
+  "remember_password": "Vous vous souvenez du mot de passe ? Connexion",
+  "lb":"Livre",
+  "kg":"Kilogramme",
+  "inches":"Pouces",
+      "cm":"Centimetres"
+
 
 
 
