@@ -88,8 +88,10 @@
   "spanish": "Spanish",
   "italian": "Italian",
   "already_have_account": "Already have an account? Login Now",
-  "remember_password": "Remember Password? Login"
-
-
+  "remember_password": "Remember Password? Login",
+  "lb":"Pound",
+  "kg":"Kg",
+  "inches":"Inches",
+   "cm":"Cm"
 
 }

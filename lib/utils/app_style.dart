@@ -78,6 +78,12 @@ class AppStyle {
     fontSize: 20,
     color: AppColors.blackColor,
   );
+  static TextStyle text20MediumStrokeNumber = GoogleFonts.montserratAlternates(
+    fontWeight: FontWeight.w500,
+    fontSize: 20,
+    color: AppColors.strokeColor,
+  );
+
   static TextStyle text20SemiBoldBlack = GoogleFonts.montserratAlternates(
     fontWeight: FontWeight.w600,
     fontSize: 20,

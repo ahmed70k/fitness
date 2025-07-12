@@ -88,7 +88,12 @@
   "spanish": "Spanisch",
   "italian": "Italienisch",
   "already_have_account": "Hast du schon ein Konto? Jetzt einloggen",
-  "remember_password": "Passwort merken? Einloggen"
+  "remember_password": "Passwort merken? Einloggen",
+  "lb":"Pfund",
+  "kg":"Kilogramm",
+  "inches":"Zoll",
+   "cm":"Zentimeter"
+
 
 
 

@@ -64,5 +64,5 @@ class AppAssets{
   static const String square ="assets/icons/square.svg";
   static const String statistics ="assets/icons/statistics.svg";
   static const String successVerified ="assets/icons/success_verified.svg";
-
+  static const String arrowIcon ="assets/icons/arrow_icon.svg";
 }

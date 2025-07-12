@@ -88,7 +88,11 @@
   "spanish": "Español",
   "italian": "Italiano",
   "already_have_account": "¿Ya tienes una cuenta? Inicia sesión ahora",
-  "remember_password": "¿Recuerdas la contraseña? Iniciar sesión"
+  "remember_password": "¿Recuerdas la contraseña? Iniciar sesión",
+  "lb":"Libra",
+  "kg":"Kilogramo",
+  "inches":"Pulgadas",
+    "cm":"Centimetros"
 
 
 

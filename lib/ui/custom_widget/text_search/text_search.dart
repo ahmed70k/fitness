@@ -32,12 +32,15 @@ class TextSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
-    var width = MediaQuery.of(context).size.width;
     return SizedBox(
       height: height * 0.07,
       child: TextFormField(
+ feature_weight_and_height
+        style: TextStyle(color: AppColors.primaryColor),
+
         controller: controller,
         style: TextStyle(color: AppColors.whiteColor),
+ develop
         validator: validator,
         onChanged: (String newText) {
           onChanged(newText);
@@ -45,7 +48,7 @@ class TextSearch extends StatelessWidget {
         cursorColor: Colors.black,
         decoration: InputDecoration(
           filled: true,
-          fillColor: AppColors.dimGrayColor,
+          fillColor: AppColors.darkWhiteColor,
           hintText: hintText,
           hintStyle: hintStyle ?? AppStyle.text16MediumDarkGray,
           suffixIcon: suffixIcon,
