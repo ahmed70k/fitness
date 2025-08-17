@@ -8,6 +8,7 @@ import 'package:fitness2/ui/home_screens/home_screen.dart';
 import 'package:fitness2/ui/providers/language_provider/language_provider.dart';
 import 'package:fitness2/ui/screens/entry_screen.dart';
 import 'package:fitness2/ui/screens/language_screens/language_screen.dart';
+import 'package:fitness2/ui/screens/schedule_screen/schedule_screen.dart';
 import 'package:fitness2/ui/screens/splash_screen/splash_screen.dart';
 import 'package:fitness2/ui/screens/weight_and_height/height_screen.dart';
 import 'package:fitness2/ui/screens/weight_and_height/step3.dart';
@@ -15,9 +16,7 @@ import 'package:fitness2/ui/screens/weight_and_height/weight_screen.dart';
 import 'package:fitness2/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'l10n/app_localizations.dart';
-
 void main() {
   runApp(
     ChangeNotifierProvider(
@@ -32,7 +31,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var appLanguage = Provider.of<LanguageProvider>(context);
-    return MaterialApp(
+    return
+      MaterialApp(
       locale: Locale(appLanguage.appLanguage),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
         appBarTheme: AppBarTheme(color: AppColors.primaryColor),
         scaffoldBackgroundColor: AppColors.primaryColor,
       ),
-      initialRoute: SplashScreen.routeName,
+      initialRoute: ScheduleScreen.routeName,
       routes: {
         SplashScreen.routeName: (_) => SplashScreen(),
         LanguageScreen.routeName: (_) => LanguageScreen(),
@@ -57,6 +57,7 @@ class MyApp extends StatelessWidget {
         WeightScreen.routeName: (_) => WeightScreen(),
         HeightScreen.routeName: (_) => HeightScreen(),
         Step3.routeName: (_) => Step3(),
+        ScheduleScreen.routeName: (_) => ScheduleScreen(),
       },
     );
   }
