@@ -7,7 +7,9 @@ import '../../../utils/app_style.dart';
 
 class SlidWidget extends StatelessWidget {
   VoidCallback onPressedNavigator;
-  SlidWidget({super.key, required this.onPressedNavigator});
+  String? text;
+
+  SlidWidget({super.key, required this.onPressedNavigator, this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +50,9 @@ class SlidWidget extends StatelessWidget {
                 TextButton(
                   onPressed: onPressedNavigator,
                   child: Text(
-                    AppLocalizations.of(context)!.next,
+                    text != null
+                        ? AppLocalizations.of(context)!.start_now
+                        : AppLocalizations.of(context)!.next,
                     style: AppStyle.text24SemiBoldWhite,
                   ),
                 ),
