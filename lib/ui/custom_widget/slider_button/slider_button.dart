@@ -52,36 +52,39 @@ class SlideToStartButtonState extends State<SlideToStartButton> {
             child: Padding(
               padding: const EdgeInsets.all(4.0),
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
                   ElevatedButton(
-                  onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                shape: CircleBorder(side: BorderSide.none),
-              ),
-              child: SvgPicture.asset(AppAssets.arrowForward),
-                        ),
-                        Text(AppLocalizations.of(context)!.lets_start,style: AppStyle.text17SemiBoldWhite,),
-                        Row(
-              children: [
-                Icon(
-                  Icons.arrow_forward_ios_outlined,
-                  color: Color(0X40FFFFFF),
-                ),
-                Icon(
-                  Icons.arrow_forward_ios_outlined,
-                  color: Color(0X80FFFFFF),
-                ),
-                Icon(
-                  Icons.arrow_forward_ios_outlined,
-                  color: Color(0XFFFFFFFF),
-                ),
-              ],
-                        ),
-                        ],
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                      shape: CircleBorder(side: BorderSide.none),
+                    ),
+                    child: SvgPicture.asset(AppAssets.arrowForward),
+                  ),
+                  Text(
+                    AppLocalizations.of(context)!.lets_start,
+                    style: AppStyle.text17SemiBoldWhite,
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.arrow_forward_ios_outlined,
+                        color: Color(0X40FFFFFF),
                       ),
+                      Icon(
+                        Icons.arrow_forward_ios_outlined,
+                        color: Color(0X80FFFFFF),
+                      ),
+                      Icon(
+                        Icons.arrow_forward_ios_outlined,
+                        color: Color(0XFFFFFFFF),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ),
-    ),
+          ),
         ),
       ],
     );

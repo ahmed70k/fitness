@@ -10,7 +10,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 
 class HomeScreen extends StatelessWidget {
-  static const String routeName = "LoginScreen2";
+  static const String routeName = "HomeScreen";
 
   const HomeScreen({super.key});
 

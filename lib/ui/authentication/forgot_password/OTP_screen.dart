@@ -14,8 +14,14 @@ class OtpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var height = MediaQuery.of(context).size.height;
-    var width = MediaQuery.of(context).size.width;
+    var height = MediaQuery
+        .of(context)
+        .size
+        .height;
+    var width = MediaQuery
+        .of(context)
+        .size
+        .width;
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 21),
@@ -57,7 +63,9 @@ class OtpScreen extends StatelessWidget {
             ),
             SizedBox(height: height * 0.05),
             ButtonContainer(
-              onPressed: () {Navigator.pushNamed(context, CreateNewPassword.routeName);},
+              onPressed: () {
+                Navigator.pushNamed(context, CreateNewPassword.routeName);
+              },
               text: AppLocalizations.of(context)!.verify,
             ),
             Spacer(),
