@@ -1,6 +1,7 @@
 import 'package:fitness2/l10n/app_localizations.dart';
 import 'package:fitness2/ui/custom_widget/chart_container/chart_container.dart';
 import 'package:fitness2/ui/custom_widget/slider_button/slider_button.dart';
+import 'package:fitness2/ui/screens/weight_and_height/weight_screen.dart';
 import 'package:fitness2/utils/app_assets.dart';
 import 'package:fitness2/utils/app_colors.dart';
 import 'package:fitness2/utils/app_style.dart';
@@ -9,7 +10,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 
 class HomeScreen extends StatelessWidget {
-  static const String routeName = "LoginScreen2";
+  static const String routeName = "HomeScreen";
 
   const HomeScreen({super.key});
 
@@ -173,7 +174,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Spacer(),
                  SlideToStartButton(onSlideComplete: (){
-                   Navigator.pushNamed(context,routeName);
+                   Navigator.pushNamed(context,WeightScreen.routeName);
                  })
 
                  /* SliderButton(
